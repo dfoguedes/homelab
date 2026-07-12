@@ -11,10 +11,9 @@ ingressRoute:
   dashboard:
     enabled: true
 
-additionalArguments:
-  - "--log.level=INFO"
-  - "--api-dashboard=true"
-  - "--api.insecure=true"
+api:
+  dashboard: true
+  insecure: true # lab
 
 logs:
   general:
