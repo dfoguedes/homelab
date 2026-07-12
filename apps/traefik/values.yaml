@@ -2,7 +2,10 @@ deployment:
   replicas: 1
 
 service:
-  type: LoadBalancer
+  type: NodePort
+  nodePorts:
+    http: 30080
+    https: 30443
 
 ingressRoute:
   dashboard:
