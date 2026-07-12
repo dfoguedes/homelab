@@ -55,12 +55,12 @@ I'm running a single-node cluster on the following hardware:
         <td>An open-source monitoring and alerting toolkit that features a powerful time series database and flexible query language for real-time insights.</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://www.svgrepo.com/download/374041/renovate.svg"></td>
+        <td><img width="32" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/renovate.svg"></td>
         <td><a href="https://github.com/renovatebot/renovate">Renovate</a></td>
         <td>Automated dependency management tool that simplifies keeping your projects up-to-date and secure by handling updates seamlessly.</td>
     </tr>
     <tr>
-        <td><img width="32" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/sealed-secrets.svg"></td>
+        <td><img width="32" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openssl.svg"></td>
         <td><a href="https://github.com/bitnami-labs/sealed-secrets">Sealed Secrets</a></td>
         <td>Kubernetes controller and tool for one-way encrypted Secrets, enabling safe storage of secrets in Git.</td>
     </tr>
