@@ -19,5 +19,3 @@ ports:
     exposedPort: 8080
     nodePort: 30900
 
-logs:
-  level: INFO
