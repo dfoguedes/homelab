@@ -5,10 +5,17 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  source:
-    repoURL: https://falcosecurity.github.io/charts
-    targetRevision: 4.8.1
-    path: apps/falco
+  sources:
+    - repoURL: https://falcosecurity.github.io/charts
+      chart: falco
+      targetRevision: 5.12.0
+      helm:
+        releaseName: falco
+        valueFiles:
+          - $values/apps/falco/values.yaml
+    - repoURL: https://github.com/dfoguedes/homelab.git
+      targetRevision: main
+      ref: values
   destination:
     server: https://kubernetes.default.svc
     namespace: falco
@@ -17,4 +24,4 @@ spec:
       prune: true
       selfHeal: true
     syncOptions:
-    - CreateNamespace=true
+      - CreateNamespace=true
