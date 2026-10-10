@@ -507,9 +507,9 @@ customRules:
     - rule: Shell em container (custom)
       desc: Qualquer shell aberta num container
       condition: >
-        evt.type = execve and evt.dir = < and container.id != host
+        spawned_process and container
         and proc.name in (sh, bash, zsh)
-      output: "Opened Shell!!!  (user=%user.name container=%container.name cmd=%proc.cmdline)"
+      output: "Opened Shell!!! (user=%user.name container=%container.name cmd=%proc.cmdline)"
       priority: WARNING
   # Although Falco comes with a nice default rule set for detecting weird
   # behavior in containers, our users are going to customize the run-time
